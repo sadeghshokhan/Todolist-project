@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    
+
     <div class="container">
         <div class="todo-app">
-            <h2>ToDolist <img src="./favicon.png" alt=""> </h2>
+            <h2>ToDolist <img src="./logo amoozeshgah.png" alt=""> </h2>
             <div class="row">
                 <input type="text" id="input-box" placeholder="add your text">
                 <button onclick="addTask()">add</button>
             </div>
-            <ul id="list-container">
-            <!-- <li class="checked">task 1</li>
-            <li >tasl 2</li>
-            <li >task 3</li>
-            <li >task 4</li>-->
-        </ul>
+            <div class="doingBox">
+                <h3>𝗱𝗼𝗶𝗻𝗴</h3>
+                <ul id="doing-list">
+                    <!-- <li >tasl 2</li>
+                <li >task 3</li>
+                <li >task 4</li> -->
+                </ul>
+            </div>
+
+            <div class="doneBox">
+                <h3>𝗱𝗼𝗻𝗲</h3>
+                <ul id="done-list">
+                    <!-- <li class="checked">task 1</li>
+                <li >tasl 2</li>
+                <li >task 3</li>
+                <li >task 4</li>-->
+                </ul>
+            </div>
+
         </div>
     </div>
 
-<script src="./script.js"></script>
+    <script src="./script.js"></script>
 </body>
+
 </html>

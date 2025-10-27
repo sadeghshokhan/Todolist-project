@@ -31,7 +31,7 @@
 
 
 .todo-app h2 img{
-    width: 100px;
+    width: 75px;
     margin-left: 275px;
 }
 
@@ -94,6 +94,11 @@ ul li.checked{
 
 ul li.checked::before{
     background-image: url(checked.png);
+}
+
+.doingBox{
+    padding: 10px 0;
+    
 }
 
 ul li span { 
