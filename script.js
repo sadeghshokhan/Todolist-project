@@ -24,7 +24,8 @@ listcontainer.addEventListener('click', function(e) {
         e.target.classList.add('checked');
         saveData();
     }else if(e.target.tagName = 'SPAN'){
-        alert('first move task to done list')
+        e.target.parentElement.remove();
+        saveData();
     }
 });
 
@@ -35,6 +36,7 @@ doneList.addEventListener('click', function(e) {
         saveData();
     }else if(e.target.tagName = 'SPAN'){
         e.target.parentElement.remove();
+        saveData();
     }
 });
 
