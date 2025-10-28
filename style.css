@@ -20,6 +20,7 @@
     padding: 40px 30px 70px;
     border: 1px solid red;
     border-radius: 10px;
+    
 }
 
 .todo-app h2{
@@ -64,6 +65,15 @@ button{
     border-radius: 40px;
 }
 
+button:hover{
+    background: #fd4d39;
+}
+
+button:active{
+    background: #ff1900;
+    transform: translateX(-3px);
+}
+
 ul li{
     list-style: none;
     font-size: 17px;
@@ -93,7 +103,7 @@ ul li.checked{
 }
 
 ul li.checked::before{
-    background-image: url(checked.png);
+    background-image: url(./checked2.png);
 }
 
 
@@ -109,10 +119,12 @@ ul li span {
     line-height: 40px;
     text-align: center;
     border-radius: 50%;
+    transition: 0.5s;
 }
 
 ul li span:hover{
     background: #edeef0;
+    transform: translateY(-3px);
 }
 
 .do{
@@ -129,9 +141,9 @@ ul li span:hover{
 }
 
 
-.doneBox{
-    min-height: 50px;
-}
+/* .doneBox{
+    min-height: 10px;
+} */
 
 
 h3{
