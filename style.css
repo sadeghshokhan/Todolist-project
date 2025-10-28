@@ -96,10 +96,6 @@ ul li.checked::before{
     background-image: url(checked.png);
 }
 
-.doingBox{
-    padding: 10px 0;
-    
-}
 
 ul li span { 
     /* border: 1px solid red; */
@@ -117,4 +113,27 @@ ul li span {
 
 ul li span:hover{
     background: #edeef0;
+}
+
+.do{
+    /* border: 1px solid red; */
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    margin: 50px 0;
+}
+
+.doingBox{
+    min-height: 100px;
+    
+}
+
+
+.doneBox{
+    min-height: 50px;
+}
+
+
+h3{
+    color: #002765;
 }

@@ -20,10 +20,11 @@ function addTask(){
 
 listcontainer.addEventListener('click', function(e) {
     if (e.target.tagName === 'LI') {
-        
         doneList.appendChild(e.target);
         e.target.classList.add('checked');
         saveData();
+    }else if(e.target.tagName = 'SPAN'){
+        alert('first move task to done list')
     }
 });
 
