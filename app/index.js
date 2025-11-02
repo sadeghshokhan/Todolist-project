@@ -2,6 +2,9 @@
 const inputbox = document.getElementById('input-box');
 const listcontainer = document.getElementById('doing-list');
 const doneList = document.getElementById("done-list");
+const addButton = document.querySelector("button");
+
+addButton.addEventListener('click' , addTask)
 
 function addTask(){
     if( inputbox.value == "" ){
@@ -17,6 +20,13 @@ function addTask(){
     inputbox.value = ""
     saveData()
 }
+
+inputbox.addEventListener('keypress', function(e) {
+    if(e.key === 'Enter') {
+        addTask();
+    }
+});
+
 /////////////////////////////////////////////////////////
 
 listcontainer.addEventListener('click', function(e) {
@@ -24,7 +34,7 @@ listcontainer.addEventListener('click', function(e) {
         doneList.appendChild(e.target);
         e.target.classList.add('checked');
         saveData();
-    }else if(e.target.tagName = 'SPAN'){
+    }else if(e.target.tagName == 'SPAN'){
         e.target.parentElement.remove();
         saveData();
     }
