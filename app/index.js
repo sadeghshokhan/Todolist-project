@@ -1,3 +1,4 @@
+import style from './style.css'
 
 const inputbox = document.getElementById('input-box');
 const listcontainer = document.getElementById('doing-list');
@@ -60,5 +61,6 @@ function showData(){
     listcontainer.innerHTML = localStorage.getItem('doing-data')
     doneList.innerHTML= localStorage.getItem('done-data')
 }
+
 
 showData() 

@@ -8,21 +8,20 @@
     "dev": "webpack --mode=development",
     "dev:watch": "webpack --mode=development --watch"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sadeghshokhan/Todolist-project.git"
   },
-
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sadeghshokhan/Todolist-project/issues"
   },
-  
   "homepage": "https://github.com/sadeghshokhan/Todolist-project#readme",
   "devDependencies": {
+    "css-loader": "^7.1.2",
+    "style-loader": "^4.0.0",
     "webpack": "^5.102.1",
     "webpack-cli": "^6.0.1"
   }
