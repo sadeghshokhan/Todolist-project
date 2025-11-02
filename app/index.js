@@ -46,7 +46,7 @@ doneList.addEventListener('click', function(e) {
         listcontainer.appendChild(e.target);
         e.target.classList.remove('checked');
         saveData();
-    }else if(e.target.tagName = 'SPAN'){
+    }else if(e.target.tagName == 'SPAN'){
         e.target.parentElement.remove();
         saveData();
     }
